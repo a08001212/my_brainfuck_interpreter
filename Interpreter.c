@@ -15,7 +15,7 @@ int Interpreter(char *filename){
     int nowWorkSpaceSize = WorkSpaceSize;
     while (*readFilePoint){
         // newline or space
-        if(*readFilePoint == '\n' || *readFilePoint == ' ' || *readFilePoint == '\t' || *readFilePoint != '\r'){
+        if(*readFilePoint == '\n' || *readFilePoint == ' ' || *readFilePoint == '\t' || *readFilePoint == '\r'){
             ++readFilePoint;
             continue;
         }else if(*readFilePoint == '+'){
@@ -67,29 +67,16 @@ int Interpreter(char *filename){
 
             }
         }else{
-            printf("Unknow command %c\n", *readFilePoint);
+            printf("Unknown command %c\n", *readFilePoint);
             exit(2);
         }
     }
+    free(fileString);
+    free(workspace);
     return 0;
 }
 
 char* openFile(char *filename){
-//    FILE *fw = fopen(filename, "rb");
-//    if(!fw){
-//        printf("Can't open %s\n", filename);
-//        exit(2);
-//    }
-//
-//    fseek( fw , 0L , SEEK_END);
-//    long fileSize = ftell( fw );
-//    printf("file size is %ld\n", fileSize);
-//    char *str = calloc(1, fileSize+1);
-//    fclose(fw);
-////    fw = fopen(filename, "rb");
-//    printf("%d", fread(str, 1, fileSize, fw));
-//
-//    return "str";
 
     FILE *fp;
     long lSize;
