@@ -1,0 +1,22 @@
+# ninja log v5
+3	159	7106781851506674	CMakeFiles/brainfuck.dir/main.c.obj	8255707601b5211b
+1	42	7106782930210727	build.ninja	10cd8ac7a7eb2897
+0	158	7106770215667276	CMakeFiles/brainfuck.dir/Interpreter.c.obj	60ed33263feeff71
+159	512	7106770218992410	brainfuck.exe	41919747b86b2c75
+0	62	7106782951612149	CMakeFiles/brainfuck.dir/main.c.obj	6f53683cd89fdb8
+0	67	7106783189412523	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+67	139	7106783189998447	brainfuck.exe	4e4e6bb9c4d823ce
+1	69	7106784946674596	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+69	138	7106784947225365	brainfuck.exe	4e4e6bb9c4d823ce
+1	68	7106794236934128	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+68	136	7106794237481234	brainfuck.exe	4e4e6bb9c4d823ce
+0	70	7106795551786197	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+71	139	7106795552336833	brainfuck.exe	4e4e6bb9c4d823ce
+0	73	7106900179955972	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+73	149	7106900180581905	brainfuck.exe	4e4e6bb9c4d823ce
+0	69	7106900693690532	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+69	140	7106900694248656	brainfuck.exe	4e4e6bb9c4d823ce
+0	70	7106902843828199	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+70	142	7106902844414280	brainfuck.exe	4e4e6bb9c4d823ce
+1	73	7106904323628488	CMakeFiles/brainfuck.dir/Interpreter.c.obj	65bba47e0fedb40d
+73	143	7106904324201898	brainfuck.exe	4e4e6bb9c4d823ce
