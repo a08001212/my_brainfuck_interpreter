@@ -39,7 +39,7 @@ int Interpreter(char *filename){
             ++readFilePoint;
         }else if(*readFilePoint == '<'){
             if(workspacePoint == workspace){
-                printf("Can't running < command in %lld char", readFilePoint - fileString);
+                printf("Can't running < command in %ld char", readFilePoint - fileString);
                 exit(2);
             }
             workspacePoint--;
