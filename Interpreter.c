@@ -15,10 +15,7 @@ int Interpreter(char *filename){
     int nowWorkSpaceSize = WorkSpaceSize;
     while (*readFilePoint){
         // newline or space
-        if(*readFilePoint == '\n' || *readFilePoint == ' ' || *readFilePoint == '\t' || *readFilePoint == '\r'){
-            ++readFilePoint;
-            continue;
-        }else if(*readFilePoint == '+'){
+        if(*readFilePoint == '+'){
             (*workspacePoint)++;
             ++readFilePoint;
         }else if(*readFilePoint == '-'){
@@ -67,8 +64,9 @@ int Interpreter(char *filename){
 
             }
         }else{
-            printf("Unknown command %c\n", *readFilePoint);
-            exit(2);
+//            printf("Unknown command %c\n", *readFilePoint);
+//            exit(2);
+            ++readFilePoint;
         }
     }
     free(fileString);
