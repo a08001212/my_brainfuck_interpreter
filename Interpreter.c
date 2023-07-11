@@ -29,6 +29,11 @@ int Interpreter(char *filename){
             if(workspacePoint - workspace >= nowWorkSpaceSize){
                 long long diff = workspacePoint - workspace;
                 workspace = realloc(workspace, nowWorkSpaceSize + WorkSpaceSize);
+                if(!workspacePoint){
+                    printf("Can't not realloc new memory");
+                    free(fileString);
+                    exit(2);
+                }
                 nowWorkSpaceSize += WorkSpaceSize;
                 workspacePoint = workspace + diff;
             }
@@ -37,6 +42,8 @@ int Interpreter(char *filename){
         }else if(*readFilePoint == '<'){
             if(workspacePoint == workspace){
                 printf("Can't running < command in %ld char", readFilePoint - fileString);
+                free(workspace);
+                free(fileString);
                 exit(2);
             }
             workspacePoint--;
