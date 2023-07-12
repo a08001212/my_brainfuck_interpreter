@@ -6,7 +6,7 @@ int main(int argc, char **argv) {
         printf("Please choose a file\n");
         exit(1);
     }
-    for(int i = 1; i<argv; ++i){
+    for(int i = 1; i<argc; ++i){
         Interpreter(argv[i]);
     }
 
