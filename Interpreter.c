@@ -66,8 +66,14 @@ int Interpreter(char *filename){
                 ++readFilePoint;
                 continue;
             }
-            while(*readFilePoint != '['){
+            int count_right = 1;
+
+            while (count_right){
                 --readFilePoint;
+                if(*readFilePoint == ']')
+                    ++count_right;
+                if(*readFilePoint == '[')
+                    --count_right;
 
             }
         }else{
